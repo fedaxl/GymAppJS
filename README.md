@@ -6,7 +6,7 @@ Name: Federica Fiorenza
 
 Assignment's brief: Implement Web Development Assignment 2 using the following technologies:
 - HTML
-= CSS
+- CSS
 - NodeJS
 - JSON
 - Javascript
