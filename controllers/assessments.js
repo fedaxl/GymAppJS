@@ -39,7 +39,7 @@ const assessment = {
     addAssessment(request, response) {
         const loggedInMember = accounts.getCurrentMember(request);
         const newAssessment = {
-            id: uuid(),
+            id: uuid.v1(),
             memberid: loggedInMember.id,
             date: new Date().toLocaleString('ie-IE'),
             weight: request.body.weight,

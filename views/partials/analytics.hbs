@@ -7,11 +7,11 @@ BMI Category, If a member is of an ideal body weight --}}
         <div class="column four wide center aligned">
             <i class="huge user icon"></i>
         </div>
-        {{!-- Tachometer shows green if member is of ideal body weight 
+        {{!-- Tachometer shows teal if member is of ideal body weight 
         or red if the member is not of ideal body weight --}}
         <div class="column four wide center aligned">
             {{#if isIdealBodyWeight}}
-                <i class="huge green tachometer alternate icon"></i>
+                <i class="huge teal tachometer alternate icon"></i>
             {{else}}
                 <i class="huge red tachometer alternate icon"></i>
             {{/if}}
@@ -24,11 +24,11 @@ BMI Category, If a member is of an ideal body weight --}}
         <div class="column two wide left aligned">
             <h3 class="bmi">{{bmi}}</h3>
         </div>
-        {{!-- BMI Category icon shows green if the member is in the normal
+        {{!-- BMI Category icon shows teal if the member is in the normal
         category otherwise it shows as red --}}
         <div class="column four wide center aligned">
             {{#if bmiCategoryColor}}
-                <i class="huge green user md icon"></i>
+                <i class="huge teal user md icon"></i>
             {{else}}
                 <i class="huge red user md icon"></i>
             {{/if}}

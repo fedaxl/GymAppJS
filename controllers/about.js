@@ -13,7 +13,7 @@ const about = {
   index(request, response) {
     logger.info("about rendering");
     const viewData = {
-      title: "About Gym App",
+      title: "About Gym App JS",
     };
     response.render("about", viewData);
   }

@@ -4,27 +4,18 @@ and add goals to members accounts. They can also delete members off the system.
 This is the main template used for each of the sites pages --}}
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title> {{title}} </title>
-  <meta charset="UTF-8">
-  {{!-- jquery 3.1.1 --}}
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  {{!-- Semantic UI framework CSS 2.4.1 --}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    type="text/css">
-  {{!-- local css --}}
-  <link rel="stylesheet" href="../stylesheets/styles.css" type="text/css">
-  {{!-- Semantic UI framework JavaScript 2.4.1--}}
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
-</head>
-{{!-- Main body --}}
-
-<body>
-  <section class="ui container">
-    {{{body}}}
-  </section>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title> {{title}} </title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  </head>
+  <body>
+    <section class="ui container">
+      {{{body}}}
+    </section>
+  </body>
 </html>
+© 2020 GitHub, Inc.

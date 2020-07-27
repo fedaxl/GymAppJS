@@ -43,7 +43,7 @@ const goal = {
     addGoal(request, response) {
         logger.debug("Add a goal");
         const newGoal = {
-            id: uuid(),
+            id: uuid.v1(),
             memberid: request.params.memberid,
             date: request.body.date,
             weight: request.body.weight,
