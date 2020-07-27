@@ -1,0 +1,88 @@
+{
+  "assessmentCollection": [
+    {
+      "id": "5414af61-36d4-41e2-817f-fc61a0f904ea",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "03/10/2018, 5:01:33 PM",
+      "weight": "123.3",
+      "chest": "45",
+      "thigh": "12.5",
+      "upperarm": "23.3",
+      "waist": "32",
+      "hip": "38",
+      "trend": false
+    },
+    {
+      "id": "c6c2a099-209f-43a8-9f0e-543099f346ea",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "03/19/2018, 5:02:04 PM",
+      "weight": "123.3",
+      "chest": "45",
+      "thigh": "12",
+      "upperarm": "23.3",
+      "waist": "31",
+      "hip": "36",
+      "trend": true
+    },
+    {
+      "id": "5412111d-cc73-4fd7-93b8-2a8b67b1a306",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "8/26/2019, 5:13:09 PM",
+      "weight": "120",
+      "chest": "44",
+      "thigh": "12",
+      "upperarm": "23",
+      "waist": "30",
+      "hip": "35",
+      "trend": true
+    },
+    {
+      "id": "287abd89-8a48-467e-8add-9280ed215e71",
+      "memberid": "6c9b6401-92b4-4c2b-8b01-8f463804ca71",
+      "date": "5/26/2019, 5:14:49 PM",
+      "weight": "60",
+      "chest": "32.5",
+      "thigh": "20.5",
+      "upperarm": "12",
+      "waist": "32",
+      "hip": "38",
+      "trend": true
+    },
+    {
+      "id": "77d3a81a-5273-4cc6-8fc4-2450b763e477",
+      "memberid": "6c9b6401-92b4-4c2b-8b01-8f463804ca71",
+      "date": "6/26/2019, 5:15:27 PM",
+      "weight": "61",
+      "chest": "33",
+      "thigh": "20.5",
+      "upperarm": "12",
+      "waist": "3.2",
+      "hip": "38",
+      "trend": false
+    },
+    {
+      "id": "15667965-da94-434c-912f-842bd4b14cb0",
+      "memberid": "6c9b6401-92b4-4c2b-8b01-8f463804ca71",
+      "date": "7/26/2019, 5:17:28 PM",
+      "weight": "59",
+      "chest": "33",
+      "thigh": "20",
+      "upperarm": "11.9",
+      "waist": "32",
+      "hip": "38",
+      "trend": true
+    },
+    {
+      "id": "20a2a123-0cc8-4272-b4fa-038522eea00b",
+      "memberid": "6c9b6401-92b4-4c2b-8b01-8f463804ca71",
+      "date": "8/26/2019, 5:31:53 PM",
+      "weight": "59",
+      "chest": "33",
+      "thigh": "20",
+      "upperarm": "12",
+      "waist": "32",
+      "hip": "38",
+      "trend": true
+    }
+  ]
+}

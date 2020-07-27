@@ -1,0 +1,38 @@
+{{!-- Partial to show a list of all members goals.
+Each goal shows the date the goal is to be completed by 
+the weight and waist goal and the status of the goal. --}}
+<section class="ui raised segment">
+    <h2>GOALS</h2>
+    {{!-- Table showing a list of goals --}}
+    <table class="ui fixed table">
+        {{!-- Table headings --}}
+        <thead>
+            <tr>
+                <th colspan="2">Date</th>
+                <th colspan="2">Weight</th>
+                <th colspan="2">Waist</th>
+                <th colspan="4">Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <div class="ui bulleted list">
+                {{!-- For every goal list the date, weight, waist 
+                and status of that goal in the table  --}}
+                {{#each goals}}
+                    <tr>
+                        <td colspan="2"> {{date}} </td>
+                        <td colspan="2"> {{weight}} </td>
+                        <td colspan="2"> {{waist}} </td>
+                        <td colspan="4">{{status}}</td>
+                        {{!-- Button to delete a goal --}}
+                        <td>
+                            <a href="/member/{{../member.id}}/delete-goal/{{id}}" class="ui icon button">
+                                <i class="icon trash"></i>
+                            </a>
+                        </td>
+                {{/each}}
+            </div>
+        </tbody>
+    </table>
+</section>

@@ -1,0 +1,21 @@
+/* Set the font size for the BMI value in the utility partial*/
+.bmi {
+    font-size: 3em;
+}
+
+/* Set the paragraph text*/
+p {
+    font-size: 1.2em;
+}
+
+/* set the current goal background to greeny yellow */
+#bg-green {
+    background-color: greenyellow;
+}
+
+/* set the current goal font to bold, 18px and green */
+#current-goal-font {
+    font-weight: bolder;
+    font-size: 18px;
+    color: green;
+}
