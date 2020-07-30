@@ -36,15 +36,11 @@ input new details and update them --}}
             {{!-- gender --}}
             <div class="field">
                 <label>Gender</label>
-                {{!-- if the member is male check the male radio button otherwise check the 
-                female radio button --}}
-                {{#if male}}
-                    <input type="radio" name="gender" value="male" checked>Male
-                    <input type="radio" name="gender" value="female"> Female
-                {{else}}
-                    <input type="radio" name="gender" value="male">Male
-                    <input type="radio" name="gender" value="female" checked> Female
-                {{/if}}
+                <select>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="u">Unspecified</option>
+                </select>
             </div>
             <div class="two fields">
                 {{!-- height --}}
