@@ -3,7 +3,7 @@ green background. It show the the date the goal is to be completed the weight an
 goal and the status of the goal. --}}
 <section id="bg-teal" class="ui raised segment">
     {{!-- Current goal status --}}
-    <h3><i class="signal icon "></i> GOAL STATUS: {{currentgoal.status}} </h3>
+    <h3><i class="signal icon "></i> Current Goal Status: {{currentgoal.status}} </h3>
     {{!-- table to show the current goal for a member --}}
     <table class="ui fixed table teal">
         {{!-- Headings --}}
@@ -19,9 +19,9 @@ goal and the status of the goal. --}}
             {{!-- List of current goal date, measurements and status --}}
             <div class="ui bulleted list">
                 <tr>
-                    <td colspan="2"> {{currentgoal.date}} </td>
-                    <td colspan="2"> {{currentgoal.weight}} </td>
-                    <td colspan="2"> {{currentgoal.waist}} </td>
+                    <td colspan="2">{{currentgoal.date}}</td>
+                    <td colspan="2">{{currentgoal.weight}}</td>
+                    <td colspan="2">{{currentgoal.waist}}</td>
                     <td colspan="4">{{currentgoal.status}}</td>
             </div>
         </tbody>
