@@ -1,14 +1,18 @@
-{{!-- Home page - short description describing the gym application --}}
-{{> welcomemenu }}
+{{!-- Index page - shows a short text describing the gym app site --}}
+{{> welcomemenu id="about"}}
 <div class="ui two column middle aligned grid basic segment">
   <section class="column center aligned">
     <h1 class="ui header">
-      BMI Tracker
+      About BMI Tracker
     </h1>
     <p>
       Fill in your assessments week by week and track your BMI.<br>
-      Trainers will comment on your progress and <br>
-      encourage you to keep going !
+      Trainers will comment on your progress and encourage your to keep going!</p>
+    <p>
+      New feature: add your goal and keep track of your progress! 
+    </p>
+     <p>
+       Please <a id="signup" class="item" href="/signup">signup</a> or <a id="login" class="item" href="/login">login</a> using the menu above.
     </p>
   </section>
   {{!-- sports image --}}

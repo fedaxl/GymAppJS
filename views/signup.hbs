@@ -1,6 +1,8 @@
 {{!-- Sign up web page, includes a form for a new member to sign up. The new member must input
 their first name, last name, email address, password, gender, height and weight --}}
 {{> welcomemenu id="signup"}}
+<div class="ui two column grid basic middle aligned segment">
+    <div class="column">
 {{!-- signup form --}}
 <form class="ui stacked segment form" action="/register" method="POST">
   <h3 class="ui header">Register</h3>
@@ -32,11 +34,14 @@ their first name, last name, email address, password, gender, height and weight 
     <input type="text" name="address">
   </div>
   {{!-- gender --}}
-  <div class="field">
-    <label>Gender</label>
-    <input type="radio" name="gender" value="male" checked>Male
-    <input type="radio" name="gender" value="female"> Female
-  </div>
+ <div class="field">
+                <label>Gender</label>
+                <select>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Unspecified">Unspecified</option>
+                </select>
+            </div>
   <div class="two fields">
     {{!-- height --}}
     <div class="field">
@@ -51,3 +56,8 @@ their first name, last name, email address, password, gender, height and weight 
     {{!-- submit button  --}}
     <button class="ui blue submit button">Submit</button>
 </form>
+      </div>
+    <div class="column">
+        <img class="ui large image" src="/images/seticon.jpg">
+    </div>
+</div>
