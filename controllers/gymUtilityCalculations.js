@@ -77,7 +77,7 @@ const gymUtilityCalculations = {
         if (heightInInches >= fiveFoot - 2.4) {
 
             //   if the member is male an ideal body weight is 50kg plus 2.3kg for every inch over 5ft
-            if (gender === "m") {
+            if (gender === "male") {
                 idealWeight = 50 + weightForEachInchOverFiveFoot;
             }
             // otherwise the member is female/unspecified allow an ideal body weight of 45.5kg plus 2.3kg for every inch over 5ft
@@ -93,7 +93,7 @@ const gymUtilityCalculations = {
         }
         //    If the member is 5ft or less return true if male is 50kg or less or female is 45.5kg or less otherwise its false
         else {
-            if (gender === "m") {
+            if (gender === "male") {
                 if (weight <= 50 && weight >= 43.5) {
                     return true;
                 } else {

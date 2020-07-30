@@ -13,30 +13,6 @@
       "trend": false
     },
     {
-      "id": "c6c2a099-209f-43a8-9f0e-543099f346ea",
-      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "03/19/2018, 5:02:04 PM",
-      "weight": "123.3",
-      "chest": "45",
-      "thigh": "12",
-      "upperarm": "23.3",
-      "waist": "31",
-      "hip": "36",
-      "trend": true
-    },
-    {
-      "id": "5412111d-cc73-4fd7-93b8-2a8b67b1a306",
-      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "8/26/2019, 5:13:09 PM",
-      "weight": "120",
-      "chest": "44",
-      "thigh": "12",
-      "upperarm": "23",
-      "waist": "30",
-      "hip": "35",
-      "trend": true
-    },
-    {
       "id": "287abd89-8a48-467e-8add-9280ed215e71",
       "memberid": "6c9b6401-92b4-4c2b-8b01-8f463804ca71",
       "date": "5/26/2019, 5:14:49 PM",
@@ -83,6 +59,54 @@
       "waist": "32",
       "hip": "38",
       "trend": true
+    },
+    {
+      "id": "f7a98420-d2a5-11ea-84e9-01fa9a8e47de",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "7/30/2020, 8:48:05 PM",
+      "weight": "79",
+      "chest": "105",
+      "thigh": "20",
+      "upperarm": "30",
+      "waist": "70",
+      "hip": "44",
+      "trend": true
+    },
+    {
+      "id": "82f6adf0-d2a6-11ea-b2f5-9f1223153998",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "7/30/2020, 8:51:59 PM",
+      "weight": "85",
+      "chest": "105",
+      "thigh": "22",
+      "upperarm": "45",
+      "waist": "33",
+      "hip": "45",
+      "trend": false
+    },
+    {
+      "id": "8f0ba2d0-d2a6-11ea-b2f5-9f1223153998",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "7/30/2020, 8:52:19 PM",
+      "weight": "69",
+      "chest": "80",
+      "thigh": "39",
+      "upperarm": "20",
+      "waist": "60",
+      "hip": "34",
+      "trend": true
+    },
+    {
+      "id": "a6f32c60-d2a6-11ea-b2f5-9f1223153998",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "7/30/2020, 8:52:59 PM",
+      "weight": "70",
+      "chest": "105",
+      "thigh": "39",
+      "upperarm": "30",
+      "waist": "90",
+      "hip": "34",
+      "trend": false
     }
   ]
 }
