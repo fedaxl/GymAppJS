@@ -1,7 +1,7 @@
 {{!-- Partial to show the most current goal, This section is highlighted with an bright
 green background. It show the the date the goal is to be completed the weight and waist
 goal and the status of the goal. --}}
-<section id="bg-teal" class="ui raised segment">
+<section class="ui raised segment">
     {{!-- Current goal status --}}
     <h3><i class="signal icon "></i> Current Goal Status: {{currentgoal.status}} </h3>
     {{!-- table to show the current goal for a member --}}
@@ -9,20 +9,20 @@ goal and the status of the goal. --}}
         {{!-- Headings --}}
         <thead>
             <tr>
-                <th colspan="2">Date to be completed</th>
+                <th colspan="3">Date to be completed</th>
                 <th colspan="2">Weight Goal</th>
                 <th colspan="2">Waist Goal</th>
-                <th colspan="4">Status</th>
+                <th colspan="3">Status</th>
             </tr>
         </thead>
         <tbody id="current-goal-font">
             {{!-- List of current goal date, measurements and status --}}
             <div class="ui bulleted list">
                 <tr>
-                    <td colspan="2">{{currentgoal.date}}</td>
+                    <td colspan="3">{{currentgoal.date}}</td>
                     <td colspan="2">{{currentgoal.weight}}</td>
                     <td colspan="2">{{currentgoal.waist}}</td>
-                    <td colspan="4">{{currentgoal.status}}</td>
+                    <td colspan="3">{{currentgoal.status}}</td>
             </div>
         </tbody>
     </table>
