@@ -25,5 +25,5 @@ const routes = require("./routes");
 app.use("/", routes);
 
 const listener = app.listen(process.env.PORT || 4000, function() {
-  logger.info(`ICT Gym App opening on port :  ${listener.address().port}`);
+  logger.info(`ICT Gym App started on port  ${listener.address().port}`);
 });

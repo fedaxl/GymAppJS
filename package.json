@@ -10,7 +10,7 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.6",
+    "express-fileupload": "^1.1.8",
     "express-handlebars": "^5.1.0",
     "fs-extra": "^9.0.1",
     "lodash": "^4.17.19",
@@ -29,5 +29,12 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
 }
