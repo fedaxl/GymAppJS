@@ -29,16 +29,15 @@ input new details and update them --}}
                 <input placeholder="******" type="password" name="password">
             </div>
             {{!-- gender --}}
-            <div class="field">
+             {{!-- gender --}}
+             <div class="field">
                 <label>Gender</label>
-                {{#if male}}
-                    <input type="radio" name="gender" value="male" checked>Male
-                    <input type="radio" name="gender" value="female"> Female
-                {{else}}
-                    <input type="radio" name="gender" value="male">Male
-                    <input type="radio" name="gender" value="female" checked> Female
-                {{/if}}
-            </div>
+                <select>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="u" selected>Unspecified</option>
+                </select>
+              </div>                 
             {{!-- button to submit the form --}}
             <button class="ui blue submit button">Submit</button>
         </form>
