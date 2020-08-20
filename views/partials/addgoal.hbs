@@ -5,11 +5,17 @@ The member or trainer inputs these details into the form and submit them --}}
     {{!-- form to add a goal using the members id --}}
     <form class="ui segment form" action="/add-goal/{{member.id}}" method="POST">
         <div class="three fields">
-            {{!-- Date field --}}
-            <div class="field">
+            {{!-- Date field   <div class="ui calendar" id="standard_calendar">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input name="date" type="text" placeholder="Date/Time">
+            </div>
+          </div> --}}
+        
+<div class="field">
                 <label>Date to complete goal by</label>
                 <input type="date" name="date">
-            </div>
+          </div>
             {{!-- weight measurement --}}
             <div class="field">
                 <label>Weight</label>

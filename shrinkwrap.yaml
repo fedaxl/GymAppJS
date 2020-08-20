@@ -2,10 +2,10 @@ dependencies:
   body-parser: 1.19.0
   cookie-parser: 1.4.5
   express: 4.17.1
-  express-fileupload: 1.1.8
+  express-fileupload: 1.2.0
   express-handlebars: 5.1.0
   fs-extra: 9.0.1
-  lodash: 4.17.19
+  lodash: 4.17.20
   lowdb: 1.0.0
   uuid: 8.3.0
   winston: 3.3.3
@@ -215,14 +215,14 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
-  /express-fileupload/1.1.8:
+  /express-fileupload/1.2.0:
     dependencies:
       busboy: 0.3.1
     dev: false
     engines:
       node: '>=8.0.0'
     resolution:
-      integrity: sha512-5FY1of8hxuI6HfmceDKc2Y6vg3EuXAlLz0Jw/BUglzrm7nKRuvjN6Y8ZgBfRp+1t5YkGAX7TEb5a5AmG5RqDcA==
+      integrity: sha512-oe4WpKcSppXnl5peornawWUa6tKmIc1/kJxMNRGJR1A0v4zyLL6VsFR6wZ8P2a4Iq3aGx8xae3Vlr+MOMQhFPw==
   /express-handlebars/5.1.0:
     dependencies:
       glob: 7.1.6
@@ -439,6 +439,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  /lodash/4.17.20:
+    dev: false
+    resolution:
+      integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
   /logform/2.2.0:
     dependencies:
       colors: 1.4.0
@@ -834,10 +838,10 @@ specifiers:
   body-parser: ^1.19.0
   cookie-parser: ^1.4.5
   express: ^4.17.1
-  express-fileupload: ^1.1.8
+  express-fileupload: ^1.2.0
   express-handlebars: ^5.1.0
   fs-extra: ^9.0.1
-  lodash: ^4.17.19
+  lodash: ^4.17.20
   lowdb: ^1.0.0
   prettier: ^2.0.5
   uuid: ^8.3.0
