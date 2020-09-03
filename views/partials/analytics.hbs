@@ -1,5 +1,5 @@
 <section class="ui segment">
-    <div class="ui four small statistics">
+    <div class="ui five small statistics">
       {{!-- Name and Surname displayed --}}
       <div class="ui statistic">
             <div class="value">
@@ -38,6 +38,19 @@
             </div>
             <div class="label">
             {{bmiCategory}}
+            </div>
+        </div>
+      {{!-- Goal displayed --}}
+        <div class="ui statistic">
+            <div class="value">
+              {{#if currentgoal.status}}
+                 <i class="teal tasks icon"></i>
+             {{else}}
+                <i class="red tasks icon"></i>
+            {{/if}}
+            </div>
+            <div class="label">
+            GOAL {{currentgoal.status}}
             </div>
         </div>
     </div>
