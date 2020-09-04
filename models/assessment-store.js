@@ -45,8 +45,7 @@ const assessmentStore = {
 
   /*
     Return all assessments for a particular member in reverse chronological order
-    (ref: https://stackoverflow.com/questions/10123953/how-to-sort-an-array-by-a-date-property 
-    helped me with sorting of an array of dates in reverse chronological order)
+    https://www.w3schools.com/JSREF/jsref_sort.asp for sorting date in chronological order
     */
   getMemberAssessments(memberid) {
     logger.debug(`Returning all member assessments of member id: ${memberid}`);
