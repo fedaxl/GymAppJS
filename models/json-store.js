@@ -7,7 +7,6 @@
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 
-
 class JsonStore {
   constructor(file, defaults) {
     const adapter = new FileSync(file);
@@ -68,7 +67,7 @@ class JsonStore {
       .value();
   }
 
-  // find by 
+  // find by
   findBy(collection, filter) {
     return this.db
       .get(collection)

@@ -1,6 +1,18 @@
 {
   "assessmentCollection": [
     {
+      "id": "5414af61-36d4-41e2-817f-fc61a0f904ea",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "03/10/2018, 5:01:33 PM",
+      "weight": "123.3",
+      "chest": "45",
+      "thigh": "12.5",
+      "upperarm": "23.3",
+      "waist": "32",
+      "hip": "38",
+      "trend": false
+    },
+    {
       "id": "287abd89-8a48-467e-8add-9280ed215e71",
       "memberid": "6c9b6401-92b4-4c2b-8b01-8f463804ca71",
       "date": "5/26/2019, 5:14:49 PM",
@@ -82,8 +94,7 @@
       "upperarm": "20",
       "waist": "60",
       "hip": "34",
-      "trend": true,
-      "comment": "well done"
+      "trend": true
     },
     {
       "id": "a6f32c60-d2a6-11ea-b2f5-9f1223153998",
@@ -95,8 +106,7 @@
       "upperarm": "30",
       "waist": "90",
       "hip": "34",
-      "trend": false,
-      "comment": "try harder"
+      "trend": false
     }
   ]
 }

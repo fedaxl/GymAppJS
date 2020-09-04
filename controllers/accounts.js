@@ -11,9 +11,7 @@ const memberStore = require("../models/member-store");
 const trainerStore = require("../models/trainer-store");
 const logger = require("../utils/logger");
 
-
 const accounts = {
-
   // Controller to render the login page
   login(request, response) {
     logger.info("Login Page Rendering");
@@ -132,14 +130,14 @@ const accounts = {
     const memberEmail = request.cookies.member;
     const member = memberStore.getMemberByEmail(memberEmail);
     let male = false;
-    if (member.gender == 'male') {
+    if (member.gender == "male") {
       male = true;
     }
     const viewData = {
       title: "Profile",
       member: member,
       male: male
-    }
+    };
     response.render("profile", viewData);
   },
 
@@ -152,7 +150,7 @@ const accounts = {
     const trainerEmail = request.cookies.trainer;
     const trainer = trainerStore.getTrainerByEmail(trainerEmail);
     let male = true;
-    if (trainer.gender == 'male') {
+    if (trainer.gender == "male") {
       male = true;
     } else {
       male = false;
@@ -161,7 +159,7 @@ const accounts = {
       title: "Profile",
       trainer: trainer,
       male: male
-    }
+    };
     response.render("trainerprofile", viewData);
   },
 
@@ -195,7 +193,6 @@ const accounts = {
     response.cookie("trainer", trainer.email);
     logger.info("Trainer Details Updated");
     response.redirect("trainer-dashboard");
-
   }
 };
 

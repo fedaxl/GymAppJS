@@ -15,7 +15,7 @@ methods are included to
 // Requirements
 const _ = require("lodash");
 const JsonStore = require("./json-store");
-const logger = require("../utils/logger")
+const logger = require("../utils/logger");
 
 const trainerStore = {
   // Trainers are stored in the trainer-store.json file
@@ -55,7 +55,6 @@ const trainerStore = {
 
   // Update the trainers profile using the newly inputted data
   updateTrainer(newTrainerDetails, trainer) {
-
     logger.debug(`update trainer profile by id: ${trainer.id}`);
     if (newTrainerDetails.firstName !== "") {
       trainer.firstName = newTrainerDetails.firstName;
@@ -73,7 +72,6 @@ const trainerStore = {
 
     this.store.save();
   }
-
 };
 
 // export trainerStore

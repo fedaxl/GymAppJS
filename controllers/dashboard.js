@@ -11,12 +11,10 @@ assessment and delete a goal
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
-const gymUtility = require("./gymUtilityCalculations");
+const gymUtility = require("../utils/gymUtilityCalculations");
 const goalStore = require("../models/goal-store");
 
-
 const dashboard = {
-
   /* 
   Controller for member dashboard, data sent in the response to the browser dashboard page
   are title, the logged in member, first name and last name in upper case, members assessments,
@@ -24,10 +22,11 @@ const dashboard = {
   members goals, and members current goal.
   */
   memberDashboard(request, response) {
-
     logger.info("member dashboard rendering");
     const loggedInMember = accounts.getCurrentMember(request);
-    let latestAssessment = assessmentStore.getLatestAssessment(loggedInMember.email);
+    let latestAssessment = assessmentStore.getLatestAssessment(
+      loggedInMember.email
+    );
     assessmentStore.resetTrends(latestAssessment);
     const firstName = loggedInMember.firstName.toUpperCase();
     const lastName = loggedInMember.lastName.toUpperCase();
@@ -38,7 +37,10 @@ const dashboard = {
     if (bmiCategory === "NORMAL") {
       bmiCategoryColor = true;
     }
-    const isIdealBodyWeight = gymUtility.isIdealBodyWeight(loggedInMember, latestAssessment);
+    const isIdealBodyWeight = gymUtility.isIdealBodyWeight(
+      loggedInMember,
+      latestAssessment
+    );
     const goals = goalStore.getMemberGoals(loggedInMember.id);
     const currentGoal = goals[0];
     goalStore.goalStatus(goals, assessments);
@@ -57,8 +59,7 @@ const dashboard = {
     };
     response.render("memberdashboard", viewData);
   }
-
 };
 
-// export dashboard 
+// export dashboard
 module.exports = dashboard;

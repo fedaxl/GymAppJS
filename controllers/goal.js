@@ -12,25 +12,24 @@ const uuid = require("uuid");
 const goalStore = require("../models/goal-store");
 
 const goal = {
-
-    /* 
+  /* 
     Controller to delete a goal, once the goal is deleted,
     if a member is logged in they are redirected back to their dashboard,
     if a trainer is logged in they are redirected back to view of the members
     dashboard (trainerviewmember.hbs) .
     */
-    deleteGoal(request, response) {
-        logger.debug(`Delete Goal: ${request.params.id}`);
-        const goalId = request.params.id;
-        goalStore.removeGoal(goalId);
-        if (request.cookies.member != "") {
-            response.redirect("/member-dashboard");
-        } else {
-            response.redirect(`/member/${request.params.memberid}`);
-        }
-    },
+  deleteGoal(request, response) {
+    logger.debug(`Delete Goal: ${request.params.id}`);
+    const goalId = request.params.id;
+    goalStore.removeGoal(goalId);
+    if (request.cookies.member != "") {
+      response.redirect("/member-dashboard");
+    } else {
+      response.redirect(`/member/${request.params.memberid}`);
+    }
+  },
 
-    /*
+  /*
     Controller to add a goal. A goal consists of a unique identifier,
     a member id of who the member to goal is being set for, a date of
     when the goal needs to be completed by, a weight goal, a waist goal,
@@ -40,24 +39,23 @@ const goal = {
     dashboard (trainerviewmember.hbs) .
     
     */
-    addGoal(request, response) {
-        logger.debug("Add a goal");
-        const newGoal = {
-            id: uuid.v1(),
-            memberid: request.params.memberid,
-            date: request.body.date,
-            weight: request.body.weight,
-            waist: request.body.waist,
-            status: "OPEN"
-        };
-        goalStore.addGoal(newGoal);
-        if (request.cookies.member != "") {
-            response.redirect("/member-dashboard");
-        } else {
-            response.redirect(`/member/${request.params.memberid}`);
-        }
-    },
-
+  addGoal(request, response) {
+    logger.debug("Add a goal");
+    const newGoal = {
+      id: uuid.v1(),
+      memberid: request.params.memberid,
+      date: request.body.date,
+      weight: request.body.weight,
+      waist: request.body.waist,
+      status: "OPEN"
+    };
+    goalStore.addGoal(newGoal);
+    if (request.cookies.member != "") {
+      response.redirect("/member-dashboard");
+    } else {
+      response.redirect(`/member/${request.params.memberid}`);
+    }
+  }
 };
 
 // export goal

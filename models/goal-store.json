@@ -6,7 +6,7 @@
       "date": "2019-09-30",
       "weight": "118",
       "waist": "30",
-      "status": "ACHIEVED"
+      "status": "MISSED"
     },
     {
       "id": "fcb0d747-de40-409d-9153-0b97992cae16",
@@ -55,22 +55,6 @@
       "weight": "56",
       "waist": "30",
       "status": "MISSED"
-    },
-    {
-      "id": "6f0eb390-ee45-11ea-b96e-3d1038bff4ee",
-      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "2020-09-03",
-      "weight": "70",
-      "waist": "90",
-      "status": "ACHIEVED"
-    },
-    {
-      "id": "e8d5a400-ee49-11ea-b96e-3d1038bff4ee",
-      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "2020-09-16",
-      "weight": "80",
-      "waist": "90",
-      "status": "OPEN"
     }
   ]
 }

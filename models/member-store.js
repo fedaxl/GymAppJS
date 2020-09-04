@@ -19,7 +19,6 @@ const JsonStore = require("./json-store");
 const logger = require("../utils/logger");
 
 const memberStore = {
-
   // Members are stored in the member-store.json file
   store: new JsonStore("./models/member-store.json", {
     members: []
@@ -59,7 +58,8 @@ const memberStore = {
   addNumberOfAssessments(memberid) {
     logger.debug("Add 1 to number of assessments");
     const member = this.getMemberById(memberid);
-    member.numberOfAssessments = parseInt(member.numberOfAssessments) + parseInt(1);
+    member.numberOfAssessments =
+      parseInt(member.numberOfAssessments) + parseInt(1);
     this.store.save();
   },
 
@@ -68,7 +68,8 @@ const memberStore = {
     logger.debug("Subtract 1 from the number of assessments");
     const member = this.getMemberById(memberid);
     if (member.numberOfAssessments > 0) {
-      member.numberOfAssessments = parseInt(member.numberOfAssessments) - parseInt(1);
+      member.numberOfAssessments =
+        parseInt(member.numberOfAssessments) - parseInt(1);
     }
     this.store.save();
   },
@@ -77,11 +78,15 @@ const memberStore = {
   updateMember(newMemberDetails, member) {
     logger.debug(`update member id: ${member.id}`);
     if (newMemberDetails.firstName !== "") {
-      logger.info(`inside update member if first name: ${newMemberDetails.firstName}`);
+      logger.info(
+        `inside update member if first name: ${newMemberDetails.firstName}`
+      );
       member.firstName = newMemberDetails.firstName;
     }
     if (newMemberDetails.lastName !== "") {
-      logger.info(`inside update member if last name: ${newMemberDetails.lastName}`);
+      logger.info(
+        `inside update member if last name: ${newMemberDetails.lastName}`
+      );
       member.lastName = newMemberDetails.lastName;
     }
     if (newMemberDetails.email !== "") {
@@ -110,7 +115,6 @@ const memberStore = {
     this.store.remove(this.collection, member);
     this.store.save();
   }
-
 };
 
 // export memberStore

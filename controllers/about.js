@@ -13,11 +13,11 @@ const about = {
   index(request, response) {
     logger.info("about rendering");
     const viewData = {
-      title: "About Gym App JS",
+      title: "About Gym App JS"
     };
     response.render("about", viewData);
   }
 };
 
-// export about 
+// export about
 module.exports = about;

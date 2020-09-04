@@ -8,16 +8,15 @@ Controller for the home/index page.
 const logger = require("../utils/logger");
 
 const home = {
+  // Controller to render the home page
+  index(request, response) {
+    logger.info("Rendering home page");
 
-    // Controller to render the home page
-    index(request, response) {
-        logger.info("Rendering home page");
-
-        const viewData = {
-            title: "Home Page",
-        };
-        response.render("index", viewData);
-    },
+    const viewData = {
+      title: "Home Page"
+    };
+    response.render("index", viewData);
+  }
 };
 
 // export home
