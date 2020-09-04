@@ -36,5 +36,3 @@ Goal:
 - a status (open, missed, achieved)
 - can be set by a user OR a trainer
   
-  
-App features:

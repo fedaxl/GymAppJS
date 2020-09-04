@@ -73,27 +73,15 @@
       "trend": true
     },
     {
-      "id": "8f0ba2d0-d2a6-11ea-b2f5-9f1223153998",
+      "id": "c802ead0-eee4-11ea-968c-1b6898cd8e09",
       "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "7/30/2020, 8:52:19 PM",
-      "weight": "69",
-      "chest": "80",
-      "thigh": "39",
-      "upperarm": "20",
-      "waist": "60",
-      "hip": "34",
-      "trend": true
-    },
-    {
-      "id": "0a18df50-eecd-11ea-a486-33f8585850a9",
-      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "9/4/2020, 4:38:19 PM",
-      "weight": "65",
+      "date": "9/4/2020, 7:28:16 PM",
+      "weight": "60",
       "chest": "105",
-      "thigh": "30",
+      "thigh": "39",
       "upperarm": "30",
       "waist": "70",
-      "hip": "80",
+      "hip": "100",
       "trend": true
     }
   ]
