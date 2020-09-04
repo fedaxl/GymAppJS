@@ -52,10 +52,6 @@ const trainerdashboard = {
     const assessments = assessmentStore.getMemberAssessments(memberid);
     const bmi = gymUtility.calculateBMI(member, latestAssessment);
     const bmiCategory = gymUtility.determineBMICategory(bmi);
-    let bmiCategoryColor = false;
-    if (bmiCategory === "NORMAL") {
-      bmiCategoryColor = true;
-    }
     const isIdealBodyWeight = gymUtility.isIdealBodyWeight(
       member,
       latestAssessment
@@ -71,7 +67,6 @@ const trainerdashboard = {
       assessments: assessments,
       bmi: bmi,
       bmiCategory: bmiCategory,
-      bmiCategoryColor: bmiCategoryColor,
       isIdealBodyWeight: isIdealBodyWeight,
       goals: goals,
       currentgoal: currentGoal

@@ -23,9 +23,7 @@ const gymUtilityCalculations = {
     const squareOfHeight = Math.pow(height, 2);
     const bmi = ((weight / squareOfHeight) * 100) / 100;
     /*
-        Return the bmi with maximum of 2 decimal places. 
-        (ref: https://www.w3schools.com/jsref/jsref_tofixed.asp
-            this site helped me with the toFixed() method)
+     Return the bmi with maximum of 2 decimal places, using toFixed() method)
         */
     return bmi.toFixed(2);
   },
@@ -70,6 +68,7 @@ const gymUtilityCalculations = {
     const fiveFoot = 60;
     const inchesAboveFiveFoot = heightInInches - fiveFoot;
     const weightForEachInchOverFiveFoot = inchesAboveFiveFoot * 2.3;
+
     let idealWeight;
 
     //    if the height is greater than 5 ft (with a .2ft/2.4 inches boundary)

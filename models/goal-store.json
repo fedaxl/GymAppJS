@@ -55,6 +55,14 @@
       "weight": "56",
       "waist": "30",
       "status": "MISSED"
+    },
+    {
+      "id": "217b0e40-eeb7-11ea-acb0-5ffacd407a3b",
+      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
+      "date": "2020-09-18",
+      "weight": "70",
+      "waist": "90",
+      "status": "OPEN"
     }
   ]
 }
