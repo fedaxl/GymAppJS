@@ -18,7 +18,7 @@ const _ = require("lodash");
 const logger = require("../utils/logger");
 const memberStore = require("../models/member-store");
 const JsonStore = require("./json-store");
-const gymUtility = require("../utils/gymUtilityCalculations");
+const gymUtility = require("../utils/gymUtilsCalc");
 
 const assessmentStore = {
   /* 

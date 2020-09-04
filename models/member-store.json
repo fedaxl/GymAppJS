@@ -6,11 +6,10 @@
       "email": "homer@simpson.com",
       "password": "secret",
       "address": "Simpson Row",
-      "gender": "male",
       "height": "1.7",
-      "startweight": "101",
+      "startweight": "100",
       "id": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "numberOfAssessments": 5
+      "numberOfAssessments": 4
     },
     {
       "firstName": "bart",

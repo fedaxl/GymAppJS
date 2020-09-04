@@ -13,7 +13,7 @@ and goals.
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
-const gymUtility = require("../utils/gymUtilityCalculations");
+const gymUtility = require("../utils/gymUtilsCalc");
 const memberStore = require("../models/member-store");
 const goalStore = require("../models/goal-store");
 

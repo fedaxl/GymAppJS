@@ -11,7 +11,7 @@ assessment and delete a goal
 const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
 const assessmentStore = require("../models/assessment-store");
-const gymUtility = require("../utils/gymUtilityCalculations");
+const gymUtility = require("../utils/gymUtilsCalc");
 const goalStore = require("../models/goal-store");
 
 const dashboard = {

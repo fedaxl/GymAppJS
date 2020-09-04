@@ -95,18 +95,6 @@
       "waist": "60",
       "hip": "34",
       "trend": true
-    },
-    {
-      "id": "a6f32c60-d2a6-11ea-b2f5-9f1223153998",
-      "memberid": "ef928222-1c14-45b4-bef5-f6f73140ff03",
-      "date": "7/30/2020, 8:52:59 PM",
-      "weight": "70",
-      "chest": "105",
-      "thigh": "39",
-      "upperarm": "30",
-      "waist": "90",
-      "hip": "34",
-      "trend": false
     }
   ]
 }
