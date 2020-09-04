@@ -1,11 +1,17 @@
 {{!-- Partial to show the most current goal, This section is highlighted with an bright
 green background. It show the the date the goal is to be completed the weight and waist
 goal and the status of the goal. --}}
-<section class="ui raised segment">
+
+<div class="ui message">
+  <div class="header">
     {{!-- Current goal status --}}
-    <h3><i class="signal icon "></i> Current Goal Status: {{currentgoal.status}} </h3>
+    Current Goal Status
+  </div>
+  <p>Please find below the status of your current goal. Don't forget to contact your trainer to plan the next steps.</p>
+    
     {{!-- table to show the current goal for a member --}}
-    <table class="ui fixed table teal">
+   
+      <table class="ui grey table">
         {{!-- Headings --}}
         <thead>
             <tr>
@@ -26,4 +32,4 @@ goal and the status of the goal. --}}
             </div>
         </tbody>
     </table>
-</section>
+</div>

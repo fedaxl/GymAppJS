@@ -3,6 +3,7 @@ Each goal shows the date the goal is to be completed by
 the weight and waist goal and the status of the goal. --}}
 <section class="ui raised segment">
     <h2>GOALS</h2>
+    {{> addgoal}}
     {{!-- Table showing a list of goals --}}
     <table class="ui fixed table">
         {{!-- Table headings --}}
@@ -21,9 +22,9 @@ the weight and waist goal and the status of the goal. --}}
                 and status of that goal in the table  --}}
                 {{#each goals}}
                     <tr>
-                        <td colspan="3"> {{date}} </td>
-                        <td colspan="2"> {{weight}} </td>
-                        <td colspan="2"> {{waist}} </td>
+                        <td colspan="3">{{date}}</td>
+                        <td colspan="2">{{weight}}</td>
+                        <td colspan="2">{{waist}}</td>
                         <td colspan="3">{{status}}</td>
                         {{!-- Button to delete a goal --}}
                         <td>
